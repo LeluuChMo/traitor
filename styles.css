@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "mtavruli";
+  src: url(fonts/tg-moduli-mtavruli.ttf) format(truetype);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./russian\ flag.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "mtavruli", sans-serif;
+}
+h1 {
+  margin-bottom: 50px;
+  font-size: 60px;
+  background: linear-gradient(
+    90deg,
+    #fff 39.33%,
+    #0072bb 33.33%,
+    #0072bb 56.67%,
+    #d52b1e 56.67%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "mtavruli", sans-serif;
+  cursor: pointer;
+}
+h1,
+p {
+  text-align: center;
+  margin-top: 20px;
+}
+.rules {
+  margin: 20px 10% 0 10%;
+  display: flex;
+  justify-content: center;
+  font-family: "mtavruli";
+  font-size: 20px;
+}
+.russians {
+  color: #d52b1e;
+}
+.card {
+  width: 220px;
+  height: 250px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.card-img {
+  width: 100%;
+  height: 75%;
+  display: block;
+}
+
+.card-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.name {
+  margin: 0;
+  font-size: 1em;
+  color: #333;
+}
+.traitor {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 20px;
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+.play {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #dc2222;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-family: "mtavruli", sans-serif;
+}
+.play:hover {
+  background-color: #790404;
+}
+.ready {
+  font-size: 60px;
+  font-family: "mtavruli", sans-serif;
+}
+
+/* GAME PAGE */
+
+.container {
+  text-align: center;
+  /* margin: 0 20% 0 20%; */
+}
+
+#game-area {
+  display: flex;
+  font-family: "mtavruli", sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 100px;
+}
+
+#person-image {
+  max-width: 400px;
+  height: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+#name-guess {
+  padding: 15px;
+  font-size: 16px;
+  font-family: "mtavruli", sans-serif;
+  text-align: center;
+  width: 400px;
+  border: 5px solid #dc2222;
+}
+.inputs {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 250px;
+  font-family: "mtavruli", sans-serif;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #dc2222;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-family: "mtavruli", sans-serif;
+}
+
+button:hover {
+  background-color: #790404;
+}
+
+#result {
+  margin-top: 10px;
+  font-size: 30px;
+  background-color: #fff;
+}
+
+#next-button {
+  display: none;
+}
+
+.counts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.heart {
+  color: red;
+  font-size: 24px;
+}
