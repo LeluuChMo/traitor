@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>გამოიცანი მოღალატე</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="container">
+      <a href="index.html"><h1>გამოიცანი მოღალატე</h1></a>
+      <div id="game-area">
+        <img id="person-image" src="" alt="Person's image" />
+        <div class="inputs">
+          <input type="text" id="name-guess" placeholder="გამოიცანი" />
+          <button id="check-button">შეამოწმე</button>
+          <button id="next-button">შემდეგი</button>
+        </div>
+      </div>
+      <div class="counts">
+        <div>სწორი პასუხი: <span id="correct-count">0</span></div>
+        <div>სიცოცხლე: <span id="hearts"></span></div>
+      </div>
+      <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
