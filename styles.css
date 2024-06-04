@@ -179,7 +179,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   gap: 50px;
-  margin-bottom: 20px;
+  margin-top: 20px;
   font-size: 20px;
 }
 #correct-count {

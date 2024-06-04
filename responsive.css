@@ -18,6 +18,8 @@
     height: 250px;
   }
   .counts {
+    margin-top: 0;
+    margin-bottom: 20px;
     flex-direction: column;
     gap: 0;
   }
