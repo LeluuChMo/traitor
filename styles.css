@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url(./russian\ flag.jpg);
+  background-image: url(monebi/russian\ flag.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -118,7 +118,7 @@ p {
   font-family: "mtavruli", sans-serif;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 30px;
   gap: 100px;
 }
 
@@ -179,7 +179,7 @@ button:hover {
   align-items: center;
   gap: 50px;
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .heart {
