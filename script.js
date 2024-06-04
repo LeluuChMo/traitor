@@ -151,6 +151,8 @@ document.addEventListener("DOMContentLoaded", function () {
   function checkGuess() {
     const guessedName = nameGuessInput.value.trim().toLowerCase();
     const actualName = people[currentPersonIndex].name.toLowerCase();
+    const nameParts = actualName.split(" ");
+    const surname = nameParts[nameParts.length - 1];
 
     if (guessedName === "") {
       resultDisplay.textContent = "ველი ცარიელია";
@@ -158,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
       return; //
     }
 
-    if (guessedName === actualName) {
+    if (guessedName === actualName || guessedName === surname) {
       resultDisplay.textContent = `სწორია! ეს მოღალატეა ${people[currentPersonIndex].name}`;
       resultDisplay.style.color = "green";
       correctGuesses++;
