@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let correctGuesses = 0;
   let guessedPeople = [];
   const maxLives = 5;
-  const maxGuesses = 80;
+  const maxGuesses = 20;
 
   const personImage = document.getElementById("person-image");
   const nameGuessInput = document.getElementById("name-guess");
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function showModal() {
     Swal.fire({
       title: "გილოცავ!",
-      text: "შენ ყველა მოღალატეს ცნობ. სადმე თუ შეგხვდებიან, მათი შერცხვენაც არ გაგიჭირდება!",
+      text: "შენ ყველა მოღალატე გამოიცანი. სადმე თუ შეგხვდებიან, მათი შერცხვენაც არ გაგიჭირდება!",
       icon: "success",
       confirmButtonText: "თავიდან დაწყება",
     }).then(() => {
